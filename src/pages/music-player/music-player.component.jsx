@@ -18,6 +18,7 @@ class MusicPlayer extends Component {
     MUSIC_DATA.forEach(music => {
       let song = new Howl({
         src: music.songUrl,
+        html5: true,
         onend: () => {
           this.nextSong();
           this.resetTimer();
