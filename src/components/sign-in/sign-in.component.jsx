@@ -13,6 +13,7 @@ class SignIn extends Component {
       email: "",
       password: ""
     };
+    let alert = "";
   }
 
   handleChange = e => {
@@ -34,6 +35,7 @@ class SignIn extends Component {
       });
     } catch (error) {
       console.log(error);
+      alert("Wrong e-mail or password!");
     }
     this.setState({ email: "", password: "" });
   };
