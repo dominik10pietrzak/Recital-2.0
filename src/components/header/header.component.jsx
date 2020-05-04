@@ -22,6 +22,8 @@ const handleMenuClick = () => {
 
   if (isActive) {
     document.querySelector("body").style.overflowY = "hidden";
+    document.querySelector("html").style.overflowY = "hidden";
+
     for (let i = 0; i < listElements.length; i++) {
       setTimeout(() => {
         listElements[i].style.opacity = "1";
@@ -30,6 +32,7 @@ const handleMenuClick = () => {
     window.scrollTo(0, 0);
   } else if (!isActive) {
     document.querySelector("body").style.overflowY = "scroll";
+    document.querySelector("html").style.overflowY = "scroll";
     for (let i = 0; i < listElements.length; i++) {
       setTimeout(() => {
         listElements[i].style.opacity = "0";
