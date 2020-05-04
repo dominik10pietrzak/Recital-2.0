@@ -75,6 +75,7 @@ $main-color: #2e71e9;
 
 @media only screen and (max-width: 1024px) and (max-height: 1366px) {
   .player-interface {
+    overflow: scroll;
     padding: 2rem 4rem;
     height: calc(100vh - 14rem);
   }
