@@ -4,7 +4,7 @@ import "./homepage.styles.scss";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
-import { TimelineMax, Power2 } from "gsap";
+import { TimelineMax, Power2 } from "gsap/all";
 
 import background from "../../assets/woman.jpg";
 import mobileBackground from "../../assets/guitar.jpg";
