@@ -4,7 +4,7 @@ import "./homepage.styles.scss";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
-import { TimelineMax, Power2 } from "gsap/all";
+import { TimelineMax, Power2 } from "gsap/dist/gsap";
 
 import background from "../../assets/woman.jpg";
 import mobileBackground from "../../assets/guitar.jpg";
@@ -56,9 +56,9 @@ class HomePage extends Component {
         <section className="container">
           <div className="content">
             {window.innerWidth <= 1024 && window.innerHeight <= 1366 ? (
-              <img src={mobileBackground} alt="mobile" />
+              <img src={mobileBackground} />
             ) : (
-              <img src={background} alt="woman" />
+              <img src={background} />
             )}
             <div className="welcome">
               <h1>Music for everyone.</h1>
