@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Recital-2.0/static/css/main.17c3aac3.chunk.css",
-    "main.js": "/Recital-2.0/static/js/main.ce288d64.chunk.js",
-    "main.js.map": "/Recital-2.0/static/js/main.ce288d64.chunk.js.map",
+    "main.css": "/Recital-2.0/static/css/main.dbba6c3c.chunk.css",
+    "main.js": "/Recital-2.0/static/js/main.38bef976.chunk.js",
+    "main.js.map": "/Recital-2.0/static/js/main.38bef976.chunk.js.map",
     "runtime-main.js": "/Recital-2.0/static/js/runtime-main.0ed30bb7.js",
     "runtime-main.js.map": "/Recital-2.0/static/js/runtime-main.0ed30bb7.js.map",
-    "static/js/2.2f953543.chunk.js": "/Recital-2.0/static/js/2.2f953543.chunk.js",
-    "static/js/2.2f953543.chunk.js.map": "/Recital-2.0/static/js/2.2f953543.chunk.js.map",
+    "static/js/2.fb8648da.chunk.js": "/Recital-2.0/static/js/2.fb8648da.chunk.js",
+    "static/js/2.fb8648da.chunk.js.map": "/Recital-2.0/static/js/2.fb8648da.chunk.js.map",
     "index.html": "/Recital-2.0/index.html",
-    "precache-manifest.78d914ba0ce4f2d4d3c91c97f08a7b86.js": "/Recital-2.0/precache-manifest.78d914ba0ce4f2d4d3c91c97f08a7b86.js",
+    "precache-manifest.8d08c5de49e77c9a2082fc2aa31f4ad7.js": "/Recital-2.0/precache-manifest.8d08c5de49e77c9a2082fc2aa31f4ad7.js",
     "service-worker.js": "/Recital-2.0/service-worker.js",
-    "static/css/main.17c3aac3.chunk.css.map": "/Recital-2.0/static/css/main.17c3aac3.chunk.css.map",
-    "static/js/2.2f953543.chunk.js.LICENSE": "/Recital-2.0/static/js/2.2f953543.chunk.js.LICENSE",
+    "static/css/main.dbba6c3c.chunk.css.map": "/Recital-2.0/static/css/main.dbba6c3c.chunk.css.map",
+    "static/js/2.fb8648da.chunk.js.LICENSE": "/Recital-2.0/static/js/2.fb8648da.chunk.js.LICENSE",
     "static/media/back_in_time.mp3": "/Recital-2.0/static/media/back_in_time.6bc884ca.mp3",
-    "static/media/player-block.styles.scss": "/Recital-2.0/static/media/bg-image.cee9e437.jpg",
-    "static/media/homepage.styles.scss": "/Recital-2.0/static/media/concert.dacca721.jpg",
+    "static/media/player-block.styles.scss": "/Recital-2.0/static/media/bg-image.920cb8fe.jpg",
+    "static/media/music-player.styles.scss": "/Recital-2.0/static/media/cassette.2fb84366.jpg",
     "static/media/dancefloor.mp3": "/Recital-2.0/static/media/dancefloor.5dde002a.mp3",
-    "static/media/dj.mp4": "/Recital-2.0/static/media/dj.4925d442.mp4",
     "static/media/energy.mp3": "/Recital-2.0/static/media/energy.259e02e1.mp3",
     "static/media/fearless.mp3": "/Recital-2.0/static/media/fearless.e0e24ce2.mp3",
+    "static/media/guitar.jpg": "/Recital-2.0/static/media/guitar.8d698417.jpg",
     "static/media/heart_afire.mp3": "/Recital-2.0/static/media/heart_afire.714bd679.mp3",
     "static/media/heroes_tonight.mp3": "/Recital-2.0/static/media/heroes_tonight.5dff3dae.mp3",
     "static/media/identity.mp3": "/Recital-2.0/static/media/identity.6be4e9dd.mp3",
@@ -30,12 +30,13 @@
     "static/media/pill.mp3": "/Recital-2.0/static/media/pill.ae0b02fa.mp3",
     "static/media/shine.mp3": "/Recital-2.0/static/media/shine.e644cc4e.mp3",
     "static/media/the_wizard.mp3": "/Recital-2.0/static/media/the_wizard.c0a8ef27.mp3",
-    "static/media/wait_for_me.mp3": "/Recital-2.0/static/media/wait_for_me.0c2463cd.mp3"
+    "static/media/wait_for_me.mp3": "/Recital-2.0/static/media/wait_for_me.0c2463cd.mp3",
+    "static/media/woman.jpg": "/Recital-2.0/static/media/woman.ed5b0b5d.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.0ed30bb7.js",
-    "static/js/2.2f953543.chunk.js",
-    "static/css/main.17c3aac3.chunk.css",
-    "static/js/main.ce288d64.chunk.js"
+    "static/js/2.fb8648da.chunk.js",
+    "static/css/main.dbba6c3c.chunk.css",
+    "static/js/main.38bef976.chunk.js"
   ]
 }
