@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Recital-2.0/static/css/main.6e752700.chunk.css",
-    "main.js": "/Recital-2.0/static/js/main.6a9c9fce.chunk.js",
-    "main.js.map": "/Recital-2.0/static/js/main.6a9c9fce.chunk.js.map",
+    "main.css": "/Recital-2.0/static/css/main.6197aabe.chunk.css",
+    "main.js": "/Recital-2.0/static/js/main.ba27d916.chunk.js",
+    "main.js.map": "/Recital-2.0/static/js/main.ba27d916.chunk.js.map",
     "runtime-main.js": "/Recital-2.0/static/js/runtime-main.0ed30bb7.js",
     "runtime-main.js.map": "/Recital-2.0/static/js/runtime-main.0ed30bb7.js.map",
     "static/js/2.b640c1ed.chunk.js": "/Recital-2.0/static/js/2.b640c1ed.chunk.js",
     "static/js/2.b640c1ed.chunk.js.map": "/Recital-2.0/static/js/2.b640c1ed.chunk.js.map",
     "index.html": "/Recital-2.0/index.html",
-    "precache-manifest.25f6bdf8cf014731dfec1c24a1abf625.js": "/Recital-2.0/precache-manifest.25f6bdf8cf014731dfec1c24a1abf625.js",
+    "precache-manifest.c4e8fab15e2c198827382d89d0286d63.js": "/Recital-2.0/precache-manifest.c4e8fab15e2c198827382d89d0286d63.js",
     "service-worker.js": "/Recital-2.0/service-worker.js",
-    "static/css/main.6e752700.chunk.css.map": "/Recital-2.0/static/css/main.6e752700.chunk.css.map",
+    "static/css/main.6197aabe.chunk.css.map": "/Recital-2.0/static/css/main.6197aabe.chunk.css.map",
     "static/js/2.b640c1ed.chunk.js.LICENSE": "/Recital-2.0/static/js/2.b640c1ed.chunk.js.LICENSE",
     "static/media/back_in_time.mp3": "/Recital-2.0/static/media/back_in_time.6bc884ca.mp3",
     "static/media/player-block.styles.scss": "/Recital-2.0/static/media/bg-image.920cb8fe.jpg",
@@ -36,7 +36,7 @@
   "entrypoints": [
     "static/js/runtime-main.0ed30bb7.js",
     "static/js/2.b640c1ed.chunk.js",
-    "static/css/main.6e752700.chunk.css",
-    "static/js/main.6a9c9fce.chunk.js"
+    "static/css/main.6197aabe.chunk.css",
+    "static/js/main.ba27d916.chunk.js"
   ]
 }
