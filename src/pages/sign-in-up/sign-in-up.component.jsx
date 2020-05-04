@@ -6,13 +6,9 @@ import SignIn from "../../components/sign-in/sign-in.component";
 import SignUp from "../../components/sign-up/sign-up.component";
 
 class SignInUp extends Component {
-  componentDidMount = () => {
-    document.querySelector(".header").style.backgroundColor = "black";
-  };
-
   render() {
     return (
-      <div className="sign-in-up">
+      <div className="sign-in-up changing-component">
         <SignIn />
         <SignUp />
       </div>

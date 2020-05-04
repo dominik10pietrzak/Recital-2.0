@@ -17,7 +17,7 @@ const ProgressBar = ({
   musicAudio,
   currentTime,
   setTimer,
-  resetTimer
+  resetTimer,
 }) => {
   let length = Math.round(musicAudio[currentSong]._duration);
   let lengthMinutes = Math.floor(length / 60);

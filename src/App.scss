@@ -3,7 +3,7 @@ $main-color: #4cad4c;
 body {
   margin: 0;
   // font-family: "Be Vietnam", sans-serif;
-  font-family: "Amiko", sans-serif;
+  font-family: "Oswald", sans-serif;
   background-color: rgb(31, 31, 31);
   color: white;
 
@@ -14,6 +14,11 @@ body {
 
 :root {
   font-size: 25px;
+
+  .invisible {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 ::-webkit-scrollbar {

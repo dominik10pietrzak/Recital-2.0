@@ -1,17 +1,18 @@
-$main-color: #4cad4c;
+$main-color: #2e71e9;
 
 .song-button {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 1rem;
+  padding: 0.75rem;
 
   * {
     pointer-events: none;
   }
 
   .song-cover {
-    width: 3rem;
+    width: 2rem;
+    border-radius: 0.25rem;
   }
   .song-description {
     margin: 0 1rem;
@@ -23,16 +24,17 @@ $main-color: #4cad4c;
 
     .title {
       margin: 0;
+      font-size: 0.9rem;
     }
 
     .others {
       * {
         margin-right: 1rem;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
       }
 
       .author {
-        color: gray;
+        color: rgb(187, 187, 187);
       }
 
       .year {
@@ -40,7 +42,7 @@ $main-color: #4cad4c;
       }
 
       .album {
-        color: gray;
+        color: rgb(187, 187, 187);
       }
     }
   }

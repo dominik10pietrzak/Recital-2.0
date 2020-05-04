@@ -1,4 +1,4 @@
-$main-color: #4cad4c;
+$main-color: #2e71e9;
 // $main-color: #3a9fe5;
 
 .progress-bar {
@@ -8,19 +8,30 @@ $main-color: #4cad4c;
   display: flex;
   justify-content: space-around;
   align-items: space-around;
-  background-color: #1f1f1f;
-  border-top: 0.2rem solid rgb(43, 43, 43);
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+    opacity: 0.8;
+    left: 0;
+    top: 0;
+    z-index: 0;
+  }
 
   .main-color {
     color: $main-color;
   }
 
   .fas {
-    color: gray;
+    color: rgb(187, 187, 187);
     font-size: 1.25rem;
     transition: all 0.2s ease;
     &:hover {
-      color: $main-color;
+      color: white;
       cursor: pointer;
     }
     &:active {
@@ -33,7 +44,7 @@ $main-color: #4cad4c;
   .fa-volume-up {
     color: $main-color;
     &:hover {
-      color: gray;
+      color: white;
     }
   }
 
@@ -100,6 +111,7 @@ $main-color: #4cad4c;
       img {
         width: 2rem;
         margin-right: 1rem;
+        border-radius: 0.25rem;
       }
     }
     .action-buttons {
@@ -121,7 +133,15 @@ $main-color: #4cad4c;
 @media only screen and (max-width: 1024px) and (max-height: 1366px) {
   .progress-bar {
     padding: 0;
-    height: 8rem;
+    height: 10rem;
+    padding-bottom: 1rem;
+    border: none;
+
+    &::after {
+      background-color: #181b1d;
+      opacity: 1;
+    }
+
     .middle {
       width: 29rem;
       .bar {

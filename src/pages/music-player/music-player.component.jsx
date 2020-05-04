@@ -15,14 +15,14 @@ class MusicPlayer extends Component {
     super(props);
 
     let songsCollection = [];
-    MUSIC_DATA.forEach(music => {
+    MUSIC_DATA.forEach((music) => {
       let song = new Howl({
         src: music.songUrl,
         html5: true,
         onend: () => {
           this.nextSong();
           this.resetTimer();
-        }
+        },
       });
       songsCollection.push(song);
     });
@@ -37,47 +37,48 @@ class MusicPlayer extends Component {
       volume: 0,
       filter: "",
       timer: false,
-      currentTime: 0
+      currentTime: 0,
     };
   }
 
   componentDidMount = () => {
-    document.querySelector(".header").style.backgroundColor = "black";
+    document.querySelector(".footer").style.display = "none";
   };
 
   componentWillUnmount = () => {
     this.state.musicAudio[this.state.currentSong].stop();
+
+    document.querySelector(".footer").style.display = "block";
   };
 
   handleClickOnSong = (song, info) => {
-    this.state.musicAudio.forEach(music => {
+    this.state.musicAudio.forEach((music) => {
       music.stop();
     });
     this.setState({
       currentSong: info.id - 1,
-      playing: true
+      playing: true,
     });
-    $("#progress-bar").stop();
     song.play();
     $("#progress-bar").css({ width: 0 });
     this.barProgressing();
   };
 
-  handleVisibility = value => {
+  handleVisibility = (value) => {
     switch (value) {
       case "playing":
         this.setState({
-          playing: !this.state.playing
+          playing: !this.state.playing,
         });
         break;
       case "muted":
         this.setState({
-          muted: !this.state.muted
+          muted: !this.state.muted,
         });
         break;
       case "random":
         this.setState({
-          random: !this.state.random
+          random: !this.state.random,
         });
         break;
     }
@@ -90,12 +91,12 @@ class MusicPlayer extends Component {
   };
   handleStop = () => {
     this.state.musicAudio[this.state.currentSong].pause();
-    $("#progress-bar").stop();
+    window.clearInterval(this.progressBarWidth);
   };
 
   previousSong = () => {
     this.state.musicAudio[this.state.currentSong].stop();
-    $("#progress-bar").stop();
+    window.clearInterval(this.progressBarWidth);
     $("#progress-bar").css({ width: 0 });
 
     if (this.state.currentSong == 0) {
@@ -110,7 +111,7 @@ class MusicPlayer extends Component {
   nextSong = () => {
     const length = this.state.musicData.length;
     this.state.musicAudio[this.state.currentSong].stop();
-    $("#progress-bar").stop();
+    window.clearInterval(this.progressBarWidth);
     $("#progress-bar").css({ width: 0 });
 
     if (!this.state.random) {
@@ -127,31 +128,30 @@ class MusicPlayer extends Component {
     }
     if (!this.state.playing) {
       this.setState({
-        playing: !this.state.playing
+        playing: !this.state.playing,
       });
     }
   };
 
-  changeVolume = value => {
+  changeVolume = (value) => {
     this.state.musicAudio[this.state.currentSong].volume(value);
   };
 
   barProgressing = () => {
-    let duration = Math.round(
-      this.state.musicAudio[this.state.currentSong]._duration
-    );
-    const length = duration - this.state.currentTime;
-    $("#progress-bar").animate(
-      {
-        width: "100%"
-      },
-      length * 1000
-    );
+    const progressBar = document.getElementById("progress-bar");
+
+    const progressBarWidth = window.setInterval(() => {
+      progressBar.style.width = `${
+        (this.state.currentTime /
+          this.state.musicAudio[this.state.currentSong]._duration) *
+        100
+      }%`;
+    }, 100);
   };
 
   resetTimer = () => {
     this.setState({
-      currentTime: 0
+      currentTime: 0,
     });
     this.setTimer();
   };
@@ -160,12 +160,12 @@ class MusicPlayer extends Component {
     clearInterval(window.timer);
     window.timer = setInterval(() => {
       this.setState({
-        currentTime: this.state.currentTime + 1
+        currentTime: this.state.currentTime + 1,
       });
     }, 1000);
   };
 
-  searchSong = e => {
+  searchSong = (e) => {
     this.setState({ filter: e.target.value.toUpperCase() });
     if (e.target.value !== "") {
       document.querySelector(".delete").classList.remove("hidden");
@@ -176,7 +176,7 @@ class MusicPlayer extends Component {
 
   clearSearch = () => {
     this.setState({
-      filter: ""
+      filter: "",
     });
     document.getElementById("search-input").value = "";
     document.querySelector(".delete").classList.add("hidden");
@@ -184,7 +184,7 @@ class MusicPlayer extends Component {
 
   render() {
     return (
-      <div className="music-player">
+      <div className="music-player changing-component">
         <div className="application">
           <div className="top">
             {/* <PlayerMenu /> */}

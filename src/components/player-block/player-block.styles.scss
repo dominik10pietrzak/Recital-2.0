@@ -1,11 +1,10 @@
-$main-color: #4cad4c;
+$main-color: #2e71e9;
 
 .player-block {
   width: 100%;
-  background: url("../../assets/bg-image.jpg");
+  height: 100vh;
+  background: url("../../assets//bg-image.jpg");
   background-size: cover;
-  background-attachment: fixed;
-  height: calc(100vh - 4rem);
   color: white;
   box-sizing: border-box;
   display: flex;
@@ -13,9 +12,23 @@ $main-color: #4cad4c;
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
 
   * {
     margin: 2rem;
+    z-index: 2;
+  }
+
+  &::after {
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.6;
+    pointer-events: none;
   }
 
   span {
@@ -29,7 +42,7 @@ $main-color: #4cad4c;
     text-decoration: none;
     margin-top: 1rem;
     padding: 0.25rem 1rem;
-    border-radius: 5rem;
+    border-radius: 0.5rem;
 
     &:hover {
       background-color: black;
