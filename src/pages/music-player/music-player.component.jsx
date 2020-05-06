@@ -49,16 +49,13 @@ class MusicPlayer extends Component {
     if (window.innerWidth <= 1024 && window.innerHeight <= 1366) {
       document.querySelector("body").style.overflow = "hidden";
     }
-
-    // let vh = window.innerHeight * 0.01;
-    // document.documentElement.style.setProperty("--vh", `${vh}px`);
   };
 
   componentWillUnmount = () => {
     this.state.musicAudio[this.state.currentSong].stop();
 
     document.querySelector(".footer").style.display = "block";
-    document.querySelector("body").style.overflow = "scroll";
+    document.querySelector("body").style.overflow = "auto";
   };
 
   handleClickOnSong = (song, info) => {
