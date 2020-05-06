@@ -43,12 +43,22 @@ class MusicPlayer extends Component {
 
   componentDidMount = () => {
     document.querySelector(".footer").style.display = "none";
+
+    document.querySelector("body").scrollTo(0, 0);
+
+    if (window.innerWidth <= 1024 && window.innerHeight <= 1366) {
+      document.querySelector("body").style.overflow = "hidden";
+    }
+
+    // let vh = window.innerHeight * 0.01;
+    // document.documentElement.style.setProperty("--vh", `${vh}px`);
   };
 
   componentWillUnmount = () => {
     this.state.musicAudio[this.state.currentSong].stop();
 
     document.querySelector(".footer").style.display = "block";
+    document.querySelector("body").style.overflow = "scroll";
   };
 
   handleClickOnSong = (song, info) => {

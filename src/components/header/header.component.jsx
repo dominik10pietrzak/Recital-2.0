@@ -83,7 +83,9 @@ const Header = ({ currentUser }) => {
       <button
         class="hamburger hamburger--vortex"
         type="button"
-        onClick={handleMenuClick}
+        onClick={() => {
+          handleMenuClick();
+        }}
       >
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>

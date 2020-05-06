@@ -1,11 +1,17 @@
 $main-color: #4cad4c;
 
+html {
+  position: relative;
+  height: 100%;
+}
+
 body {
   margin: 0;
   position: relative;
   font-family: "Oswald", sans-serif;
   background-color: rgb(31, 31, 31);
   color: white;
+  height: 100%;
 
   * {
     box-sizing: border-box;
