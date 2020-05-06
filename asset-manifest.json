@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Recital-2.0/static/css/main.ce9901e4.chunk.css",
-    "main.js": "/Recital-2.0/static/js/main.94e216b6.chunk.js",
-    "main.js.map": "/Recital-2.0/static/js/main.94e216b6.chunk.js.map",
+    "main.js": "/Recital-2.0/static/js/main.c836d005.chunk.js",
+    "main.js.map": "/Recital-2.0/static/js/main.c836d005.chunk.js.map",
     "runtime-main.js": "/Recital-2.0/static/js/runtime-main.0ed30bb7.js",
     "runtime-main.js.map": "/Recital-2.0/static/js/runtime-main.0ed30bb7.js.map",
     "static/js/2.b640c1ed.chunk.js": "/Recital-2.0/static/js/2.b640c1ed.chunk.js",
     "static/js/2.b640c1ed.chunk.js.map": "/Recital-2.0/static/js/2.b640c1ed.chunk.js.map",
     "index.html": "/Recital-2.0/index.html",
-    "precache-manifest.f446a3d69927e2a0cdbe763ce34dff3f.js": "/Recital-2.0/precache-manifest.f446a3d69927e2a0cdbe763ce34dff3f.js",
+    "precache-manifest.aded58340d94ab4e5171ba3ed2c38892.js": "/Recital-2.0/precache-manifest.aded58340d94ab4e5171ba3ed2c38892.js",
     "service-worker.js": "/Recital-2.0/service-worker.js",
     "static/css/main.ce9901e4.chunk.css.map": "/Recital-2.0/static/css/main.ce9901e4.chunk.css.map",
     "static/js/2.b640c1ed.chunk.js.LICENSE": "/Recital-2.0/static/js/2.b640c1ed.chunk.js.LICENSE",
@@ -37,6 +37,6 @@
     "static/js/runtime-main.0ed30bb7.js",
     "static/js/2.b640c1ed.chunk.js",
     "static/css/main.ce9901e4.chunk.css",
-    "static/js/main.94e216b6.chunk.js"
+    "static/js/main.c836d005.chunk.js"
   ]
 }

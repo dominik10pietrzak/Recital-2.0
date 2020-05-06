@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "936bf7d9ef2948ca4793634a4bca19b3",
+    "revision": "a0340a3fbc4a1ffbf0092ee01f2295b7",
     "url": "/Recital-2.0/index.html"
   },
   {
-    "revision": "c274b5fd66bedfb347fa",
+    "revision": "11259b61188e6447d182",
     "url": "/Recital-2.0/static/css/main.ce9901e4.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Recital-2.0/static/js/2.b640c1ed.chunk.js.LICENSE"
   },
   {
-    "revision": "c274b5fd66bedfb347fa",
-    "url": "/Recital-2.0/static/js/main.94e216b6.chunk.js"
+    "revision": "11259b61188e6447d182",
+    "url": "/Recital-2.0/static/js/main.c836d005.chunk.js"
   },
   {
     "revision": "ca7f324c793aaa10d498",
